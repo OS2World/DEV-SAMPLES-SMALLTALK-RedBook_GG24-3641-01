@@ -1,0 +1,38 @@
+
+
+
+!ToDoListView methods !
+   
+open
+"12/12 update"
+    "Open the ToDoList application window"
+
+
+	self setItemHeight.
+    self setListFont.
+    self
+        owner: self;
+        label: 'To-Do List'.
+	self when: #close perform: #close: .
+
+	self addHeaders. 
+    self addListBox.     
+
+    toDoList:= ToDoList new.    
+    toDoList readList.  
+
+    toDoPriorityList := ToDoPriorityList new class init.
+    self addFields.  
+	self addButtons.
+	self addStatus.
+
+	HelpManager for: (self mainView) title: 'Help' file: 'c:\stvpm13\ex2\todo.hlp'  dialogs:#() aboutDlgClass: (ToDoAboutDialogBox initialize). 
+
+    self openWindow.
+	(toDoList size > 0 ) ifTrue:[
+            prevSelection := 1.
+	        self sortBy:  sortKey.
+             ] 
+       ifFalse:[
+             self addTemplateItem.
+              ].! !

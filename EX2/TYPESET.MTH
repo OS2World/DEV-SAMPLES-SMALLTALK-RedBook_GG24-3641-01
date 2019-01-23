@@ -1,0 +1,8 @@
+
+
+
+!ToDoItem methods !
+   
+type: aType
+    "sets the value of type"
+    type := aType.! !

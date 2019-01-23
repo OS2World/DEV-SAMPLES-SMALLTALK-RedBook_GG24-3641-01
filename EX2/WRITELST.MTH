@@ -1,0 +1,9 @@
+
+
+
+!ToDoList methods !
+   
+writeList
+    "Write the ToDo list on disk. "
+
+	ObjectFiler dump: self newFile: 'TODOFILE.OBJ'.! !

@@ -1,0 +1,24 @@
+
+
+
+!ToDoListView methods !
+   
+sortBy: aKey
+  "Sort the ToDOList using the sort key "
+
+ 	(aKey isNil) ifTrue: [ 
+                     sortKey:='priority' .
+                     toDoList sortList:  'priority' .
+                     ] 
+		ifFalse: [    
+                     sortKey:=aKey .
+                      toDoList sortList: aKey. 
+                      ].
+
+    toDoList sortList. 
+
+	todoListBox contents: toDoList.
+	todoListBox selection: 1.
+
+	statusField backColor: ClrYellow;
+		contents: 'List updated, sortkey: ' , sortKey.! !

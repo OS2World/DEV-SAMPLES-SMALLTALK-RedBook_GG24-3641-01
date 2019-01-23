@@ -1,0 +1,12 @@
+
+
+
+!ToDoList methods !
+   
+addItem: anItem
+
+    "Add the item to the list.  "
+
+    self add: anItem .
+    self sortList.
+     ^self.! !

@@ -1,0 +1,15 @@
+
+
+
+!TestView methods !
+   
+mySelect: aListBox
+
+
+         "This method is activated when a new
+          selection in made in listpane"
+
+         MessageBox
+                    titled: 'Line selected'
+                    withText: (aListBox lineAt: aListBox selection)
+                    style: MbOk | MbIconexclamation.! !

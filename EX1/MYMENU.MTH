@@ -1,0 +1,10 @@
+
+
+
+!TestView methods !
+ 
+myMenu
+        "Private - Answer the File menu."
+    ^Menu new
+        appendItem: '~My Choice' selector: #myMenuMethod ;
+      title: '~My Menu'! !

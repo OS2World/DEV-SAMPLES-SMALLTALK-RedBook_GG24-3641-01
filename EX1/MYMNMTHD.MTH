@@ -1,0 +1,13 @@
+
+
+
+!TestView methods !
+ 
+myMenuMethod
+         "This method is activated when 'MyChoice'
+          is selected in the pulldown 'My Menu'"
+
+         MessageBox
+                    titled: 'Gotcha!!!!!!'
+                    withText: 'My menu WORKS !!!!!!'
+                    style: MbOk | MbIconexclamation.! !

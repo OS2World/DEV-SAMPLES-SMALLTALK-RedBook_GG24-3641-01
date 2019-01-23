@@ -1,0 +1,15 @@
+
+ DLGDLL
+
+ Start     Length     Name                   Class
+ 0001:0000 00008H     DLGDLL_TEXT            CODE
+ 0002:0000 00002H     _DATA                  DATA
+ 0002:0002 00000H     CONST                  CONST
+ 0002:0002 00000H     _BSS                   BSS
+
+ Origin   Group
+ 0002:0   DGROUP
+
+ Address   Export                  Alias
+
+ 0001:0000 dummy                   dummy

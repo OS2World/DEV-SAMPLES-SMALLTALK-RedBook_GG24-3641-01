@@ -1,0 +1,18 @@
+
+!ToDoTopPane methods !
+
+sortByDeadline
+	
+	owner sortBy: 'deadline'.! 
+
+sortByDescription
+	
+		owner sortBy: 'description'.! 
+
+sortByPriority
+	
+		owner sortBy: 'priority'.! 
+
+sortByType
+	
+	owner sortBy: 'type'.! !

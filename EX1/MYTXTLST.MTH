@@ -1,0 +1,14 @@
+
+
+
+!TestView methods !
+   
+myTextList: aListBox
+
+      | myCollection |
+
+      myCollection := OrderedCollection new.
+      myCollection add: 'Row 1';
+                   add: 'Row 2';
+                   add: 'Row 3'.
+      aListBox contents: myCollection.! !

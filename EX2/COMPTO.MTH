@@ -1,0 +1,29 @@
+
+
+
+!ToDoItem methods !
+   
+compareTo: aToDoItem using: aSortKey
+
+    "Returns true if the receiver ToDoItem is less than or equal
+     to the argument ToDoItem, using the SortKey as the element
+     to be compared.
+
+     This method was originally four IF statements. After working
+     with Smalltalk for a while longer it was obvious that this
+     case statement-like processing wasn't necessary in OO, if we
+     could work out how to do it otherwise.
+
+     What happens here is that aSortKey (which has the value priority
+     or deadline etc, is converted into a symbol (unique occurance in
+     the system, like PM Atoms) which can then be used as the name of
+     a method. The perform: method executes the argument it is given
+     by sending it as a message to self (ie the item). So this one-liner
+     sets up the sort block as being a comparison between the two items'
+     values of one of their instance variables (like type or description).
+
+     If aSortKey was equal to type then the expression would be
+
+     ^self type <= aToDoItem type                                      "
+
+^(self perform: (aSortKey asSymbol)) <= (aToDoItem perform: (aSortKey asSymbol))! !

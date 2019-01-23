@@ -1,0 +1,12 @@
+
+
+
+!TestView methods !
+ 
+open
+
+    self
+        owner: self;
+        label: 'My View'.
+    self openWindow! !
+

@@ -1,0 +1,17 @@
+/*********** DUMMY C Sample Program Resource Script File (.RC) *************/
+/*                                                                                                                          */
+/*  The window resources(dialog Boxes) used by an application are defined    */
+/*  in a resource script file .RC.  This file is compiled by the resource compiler*/
+/*  to produce an executable-format file.                                                           */
+/*  The definitions are  statements which define references to other files        */
+/*  containing resources.                                                                                     */
+/*                                                                                                                          */
+/***********************************************************************************/
+
+#include <os2.h>
+
+rcinclude about.dlg
+
+
+/*********** end *************************************/
+
